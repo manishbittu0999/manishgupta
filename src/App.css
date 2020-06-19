@@ -14,7 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +39,46 @@
     transform: rotate(360deg);
   }
 }
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=MuseoModerno&display=swap');
+
+p {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  border-right: solid 3px rgba(0, 255, 0, .75);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 4s steps(23, end) 1s 1 normal both,
+    animated-cursor 600ms steps(23, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 565px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
