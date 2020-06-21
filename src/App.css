@@ -2,6 +2,34 @@
   text-align: center;
 }
 
+img {
+  border-radius: 50%;
+  height: 115px;
+  width: auto;
+}
+
+img:hover {
+  -moz-box-shadow: 0 0 20px #ccc;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+}
+
+hr {
+  /* height: 0.08px; */
+  width: 90%;
+  border-width: 0.09px;
+  /* justify-content:flex-end; */
+}
+
+p1 {
+  text-align: left;
+  font-size: 10px;
+}
+
+/* img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+} */
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,10 +42,10 @@
 } */
 
 .App-header {
-  /* background-color: #282c34; */
   background: #0F2027;
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +55,7 @@
   color: white;
 }
 
-/* .App-link {
+/*.App-link {
   color: #61dafb;
 }
 
@@ -37,8 +65,8 @@
   }
   to {
     transform: rotate(360deg);
-  }
-} */
+  } 
+}*/
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=MuseoModerno&display=swap');
 
@@ -66,7 +94,7 @@ p {
   }
 
   to {
-    width: 565px;
+    width: 90vw;
   }
 }
 
@@ -82,3 +110,9 @@ p {
   }
 }
 
+i {
+  color: white;
+  display: flex;
+  flex-direction: row;
+
+}
